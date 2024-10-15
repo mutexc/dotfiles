@@ -13,7 +13,8 @@ set $term alacritty
 output HDMI-A-1 pos 0 0 res 1920x1080@180.001Hz 
 
 # Setup wallpaper
-# output * bg /home/op/Wallpapers/tomandjerry.png fill
+output * bg #1c1c1c solid_color 
+
 
 # File Manager
 bindsym $mod+e exec thunar
@@ -147,16 +148,15 @@ bar {
 
     colors {
         statusline #ffffff
-        background #323232
+        background #1c1c1c
         inactive_workspace #32323200 #323232ff #5c5c5c
     }
-    # font terminus 10
+    font terminus 10
 }
 
 
-# default_border pixel 1 
-# default_floating_border none
-# titlebar_padding 1
+default_border pixel 0
+titlebar_padding 1
 titlebar_border_thickness 1
 
 
