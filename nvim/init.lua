@@ -1,3 +1,5 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -12,6 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	{ "EdenEast/nightfox.nvim" },
 	{
 	    'windwp/nvim-autopairs',
 	    event = "InsertEnter",
@@ -229,7 +232,7 @@ vim.defer_fn(function()
         goto_previous_end = {
           ['[M'] = '@function.outer',
           ['[]'] = '@class.outer',
-        },gruvbox_dark
+        },
       },
       swap = {
         enable = true,
@@ -282,4 +285,4 @@ set.smartcase = true
 -- files
 set.swapfile = false
 
-vim.cmd [[colorscheme gruvbox-material]]
+vim.cmd [[colorscheme carbonfox]]

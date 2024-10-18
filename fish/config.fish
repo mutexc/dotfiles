@@ -12,6 +12,7 @@ end
 
 fish_add_path /home/op/.cargo/bin
 fish_add_path /usr/bin/
+fish_add_path /home/mutexc/.local/bin/
 #
 set fish_greeting ""
 set -Ux _JAVA_AWT_WM_NONREPARENTING 1
