@@ -14,6 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	{ 'terrortylor/nvim-comment' },
 	{ "EdenEast/nightfox.nvim" },
 	{
 	    'windwp/nvim-autopairs',
@@ -68,6 +69,8 @@ require("lazy").setup({
 
 })
 
+-- comment with Shift+c, I think?
+require('nvim_comment').setup()
 -- completion plugin setup
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()

@@ -10,7 +10,8 @@ function fish_user_key_bindings
     fish_vi_key_bindings
 end
 
-fish_add_path /home/op/.cargo/bin
+# Commented out after switching to nixos
+# fish_add_path /home/op/.cargo/bin
 fish_add_path /usr/bin/
 fish_add_path /home/mutexc/.local/bin/
 #
