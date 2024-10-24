@@ -1,8 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export ASSETS_FOLDER:/home/op/ABitSavvy/src/assets
-SETUVAR --export DATABASE_URL:postgresql\x3a//op\x3aaobd1202\x40localhost/abitsavvy
-SETUVAR --export DATABASE_URL_C:postgresql\x3a//op\x3aaobd1202\x40127\x2e0\x2e0\x2e1/abitsavvy
+SETUVAR --export DATABASE_URL:postgresql\x3a//op\x3aaobd1202\x40localhost\x3a5999/abs_db
+SETUVAR --export DATABASE_URL_C:postgresql\x3a//op\x3aaobd1202\x40localhost\x3a5999/abs_db
+SETUVAR --export GO_DATABASE_URL:host\x3dlocalhost\x20port\x3d5999\x20user\x3dop\x20password\x3daobd1202\x20dbname\x3dabs_db\x20sslmode\x3ddisable
+SETUVAR --export GO_DATABASE_URL_C:host\x3dlocalhost\x20port\x3d5999\x20user\x3dop\x20password\x3daobd1202\x20dbname\x3dabs_db\x20sslmode\x3ddisable
+SETUVAR HELIX_RUNTIME:\x7e/src/helix/runtime
 SETUVAR --export _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
@@ -33,4 +36,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/mutexc/\x2elocal/bin\x1e/usr/bin
+SETUVAR fish_user_paths:/home/op/go/bin\x1e/home/op/\x2elocal/bin\x1e/home/op/\x2elocal/share/bin\x1e/home/mutexc/\x2elocal/bin\x1e/usr/bin
