@@ -1,15 +1,15 @@
 [font]
-	size = 22
+	size = 16
 	[font.normal]
-	family = "Terminus"
+	family = "jetbrains mono"
 	style = "regular"
 
 	[font.bold]
-	family = "Terminus"
+	family = "jetbrains mono"
 	style = "bold"
 
 	[font.italic]
-	family = "Terminus"
+	family = "jetbrains mono"
 	style = "italic"
 
 [scrolling]
@@ -23,61 +23,74 @@ bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
 
-
-# # Default colors
 # [colors.primary]
-# background = '#000000'
-# foreground = '#f5f5f5'
-# #
-# # # Normal colors
+# foreground = "#e0def4"
+# background = "#191724"
+# dim_foreground = "#908caa"
+# bright_foreground = "#e0def4"
+#
+# [colors.cursor]
+# text = "#e0def4"
+# cursor = "#524f67"
+#
+# [colors.vi_mode_cursor]
+# text = "#e0def4"
+# cursor = "#524f67"
+#
+# [colors.search.matches]
+# foreground = "#908caa"
+# background = "#26233a"
+#
+# [colors.search.focused_match]
+# foreground = "#191724"
+# background = "#ebbcba"
+#
+# [colors.hints.start]
+# foreground = "#908caa"
+# background = "#1f1d2e"
+#
+# [colors.hints.end]
+# foreground = "#6e6a86"
+# background = "#1f1d2e"
+#
+# [colors.line_indicator]
+# foreground = "None"
+# background = "None"
+#
+# [colors.footer_bar]
+# foreground = "#e0def4"
+# background = "#1f1d2e"
+#
+# [colors.selection]
+# text = "#e0def4"
+# background = "#403d52"
+#
 # [colors.normal]
-# # black   = '#32344a'
-# # red     = '#f7768e'
-# green   = '#7aa150'
-# # yellow  = '#e0af68'
-# blue    = '#4169E1'
-# # magenta = '#ad8ee6'
-# # cyan    = '#449dab'
-# # white   = '#787c99'
-# #
-# # # Bright colors
+# black = "#26233a"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"
+#
 # [colors.bright]
-# # black   = '#444b6a'
-# # red     = '#ff7a93'
-# green   = '#AEF359'
-# # yellow  = '#ff9e64'
-# # blue    = '#7da6ff'
-# # magenta = '#bb9af7'
-# # cyan    = '#0db9d7'
+# black = "#6e6a86"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"
 #
-#
-#
-# # Unused, kept for reference
-# ## [env]
-# # TERM = "xterm-256color"
-#
-# # [window]
-# # opacity = 1 white   = '#acb0d0'
-
-[colors.primary]
-background = "0x282828"
-foreground = "0xd4be98"
-[colors.normal]
-black = "0x3c3836"
-red = "0xea6962"
-green = "0xa9b665"
-yellow = "0xd8a657"
-blue = "0x7daea3"
-magenta = "0xd3869b"
-cyan = "0x89b482"
-white = "0xd4be98"
-[colors.bright]
-black = "0x3c3836"
-red = "0xea6962"
-green = "0xa9b665"
-yellow = "0xd8a657"
-blue = "0x7daea3"
-magenta = "0xd3869b"
-cyan = "0x89b482"
-white = "0xd4be98"
-
+# [colors.dim]
+# black = "#6e6a86"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"

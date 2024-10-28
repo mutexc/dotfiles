@@ -26,6 +26,7 @@ require("lazy").setup({
 			})
 		end,
 	},
+	{ "rose-pine/neovim", name = "rose-pine" },
 	{ 'terrortylor/nvim-comment' },
 	{
 	    'windwp/nvim-autopairs',
@@ -183,7 +184,7 @@ require("lazy").setup({
 
 })
 
--- require("rose-pine").setup({disable_background = true})
+
 -- comment with Shift+c, I think?
 require('nvim_comment').setup()
 -- completion plugin setup
@@ -405,4 +406,16 @@ set.smartcase = true
 -- files
 set.swapfile = false
 
-vim.cmd [[colorscheme gruvbox-material]]
+
+
+require("rose-pine").setup({
+    dark_variant = "main", -- main, moon, or dawn
+    styles = {
+        bold = true,
+        italic = true,
+        transparency = false,
+		comments = italic,
+    }
+})
+
+vim.cmd [[colorscheme rose-pine]]
