@@ -231,7 +231,7 @@ require("mason").setup({})
 require("mason-lspconfig").setup({
 	-- Replace the language servers listed here
 	-- with the ones you want to install
-	ensure_installed = {"rust_analyzer", "gopls", "zls" },
+	ensure_installed = {"rust_analyzer"},-- "gopls", "zls" },
 })
 
 local lspconfig = require("lspconfig")
@@ -405,4 +405,4 @@ set.smartcase = true
 -- files
 set.swapfile = false
 
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme gruvbox-material]]

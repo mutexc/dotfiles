@@ -1,5 +1,5 @@
 [font]
-	size = 25
+	size = 22
 	[font.normal]
 	family = "Terminus"
 	style = "regular"
@@ -25,36 +25,59 @@ bindings = [
 
 
 # # Default colors
+# [colors.primary]
+# background = '#000000'
+# foreground = '#f5f5f5'
+# #
+# # # Normal colors
+# [colors.normal]
+# # black   = '#32344a'
+# # red     = '#f7768e'
+# green   = '#7aa150'
+# # yellow  = '#e0af68'
+# blue    = '#4169E1'
+# # magenta = '#ad8ee6'
+# # cyan    = '#449dab'
+# # white   = '#787c99'
+# #
+# # # Bright colors
+# [colors.bright]
+# # black   = '#444b6a'
+# # red     = '#ff7a93'
+# green   = '#AEF359'
+# # yellow  = '#ff9e64'
+# # blue    = '#7da6ff'
+# # magenta = '#bb9af7'
+# # cyan    = '#0db9d7'
+#
+#
+#
+# # Unused, kept for reference
+# ## [env]
+# # TERM = "xterm-256color"
+#
+# # [window]
+# # opacity = 1 white   = '#acb0d0'
+
 [colors.primary]
-background = '#000000'
-foreground = '#f5f5f5'
-#
-# # Normal colors
+background = "0x282828"
+foreground = "0xd4be98"
 [colors.normal]
-# black   = '#32344a'
-# red     = '#f7768e'
-green   = '#7aa150'
-# yellow  = '#e0af68'
-blue    = '#4169E1'
-# magenta = '#ad8ee6'
-# cyan    = '#449dab'
-# white   = '#787c99'
-#
-# # Bright colors
+black = "0x3c3836"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
 [colors.bright]
-# black   = '#444b6a'
-# red     = '#ff7a93'
-green   = '#AEF359'
-# yellow  = '#ff9e64'
-# blue    = '#7da6ff'
-# magenta = '#bb9af7'
-# cyan    = '#0db9d7'
+black = "0x3c3836"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
 
-
-
-# Unused, kept for reference
-## [env]
-# TERM = "xterm-256color"
-
-# [window]
-# opacity = 1 white   = '#acb0d0'
