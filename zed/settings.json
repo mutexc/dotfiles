@@ -21,7 +21,7 @@
   "use_smartcase_search": true,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Dark",
+    "light": "Rosé Pine",
     "dark": "Rosé Pine"
   },
   "experimental.theme_overrides": {
