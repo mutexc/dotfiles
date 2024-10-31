@@ -431,7 +431,7 @@ set.smarttab = true
 set.softtabstop = 4
 
 -- ergonomics
-set.scrolloff = 8
+set.scrolloff = 3
 set.cc = "80"
 vim.opt.number = true
 vim.opt.relativenumber = true
