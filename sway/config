@@ -7,7 +7,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term alacritty 
+set $term wezterm 
 
 # Setup resolution and refresh rate for connect monitor
 output HDMI-A-1 pos 1920 0 res 1920x1080@180.001Hz 
