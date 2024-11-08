@@ -9,6 +9,9 @@ set $up k
 set $right l
 set $term wezterm 
 
+exec pactl load-module module-switch-on-connect
+
+
 # Setup resolution and refresh rate for connect monitor
 output HDMI-A-1 pos 1920 0 res 1920x1080@180.001Hz 
 # DON'T USE UNLESS ON A MULTI-MONITOR SETUP
@@ -158,7 +161,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-    position top
+    position bottom 
 
     status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
 

@@ -447,7 +447,7 @@ set.undofile = true
 
 
 require("rose-pine").setup({
-    dark_variant = "main", -- main, moon, or dawn
+    dark_variant = "moon", -- main, moon, or dawn
     styles = {
         bold = true,
         italic = true,
