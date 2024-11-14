@@ -13,27 +13,26 @@ exec pactl load-module module-switch-on-connect
 
 
 # Setup resolution and refresh rate for connect monitor
-output HDMI-A-1 pos 1920 0 res 1920x1080@180.001Hz 
+output HDMI-A-1 pos 0 0 res 1920x1080@143.991Hz 
 # DON'T USE UNLESS ON A MULTI-MONITOR SETUP
 # removed second monitor
-output DP-1 pos 0 0 res 1920x1080@144Hz
+output DP-1 pos 1920 0 res 1920x1080@180.00Hz
 
 # assign workspaces 1-5 to main monitor and 6-10 to secondary monitor
 # removed second monitor for now
-workspace 1 output HDMI-A-1 
-workspace 2 output HDMI-A-1 
-workspace 3 output HDMI-A-1 
-workspace 4 output HDMI-A-1 
-workspace 5 output HDMI-A-1 
-workspace 6 output HDMI-A-1 
-workspace 7 output HDMI-A-1 
-workspace 8 output HDMI-A-1 
-workspace 9 output HDMI-A-1
-workspace 10 output DP-1
+workspace 1 output DP-1 
+workspace 2 output DP-1 
+workspace 3 output DP-1 
+workspace 4 output DP-1 
+workspace 5 output DP-1 
+workspace 6 output DP-1 
+workspace 7 output DP-1 
+workspace 8 output DP-1 
+workspace 9 output DP-1
+workspace 10 output HDMI-A-1
 
 # Setup wallpaper
-output * bg "/home/op/Wallpapers/landscape.png" fit
-
+output * bg "/home/op/wallpapers/art.png" fit
 
 # File Manager
 bindsym $mod+e exec dolphin 
