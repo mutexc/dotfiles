@@ -7,7 +7,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term wezterm 
+set $term alacritty 
 
 exec pactl load-module module-switch-on-connect
 
