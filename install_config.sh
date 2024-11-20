@@ -1,3 +1,4 @@
+exec rm -rf /home/op/.config/zed &
 exec rm -rf /home/op/.config/fish &
 exec rm -rf /home/op/.config/fuzzel &
 exec rm -rf /home/op/.config/alacritty &
@@ -11,3 +12,4 @@ exec ln -s /home/op/.config/dotfiles/fish /home/op/.config &
 exec ln -s /home/op/.config/dotfiles/hypr /home/op/.config &
 exec ln -s /home/op/.config/dotfiles/fuzzel /home/op/.config &
 exec ln -s /home/op/.config/dotfiles/sway /home/op/.config &
+exec ln -s /home/op/.config/dotfiles/zed /home/op/.config &

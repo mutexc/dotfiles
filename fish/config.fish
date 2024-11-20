@@ -21,7 +21,9 @@ end
 # fish_add_path /home/op/.cargo/bin
 fish_add_path /usr/bin/
 fish_add_path /home/op/.local/share/bin
+fish_add_path /home/op/.local/share/icons
 fish_add_path /home/op/.local/bin/
+fish_add_path /home/op/.local/share
 fish_add_path /home/op/go/bin/
 #
 set fish_greeting ""
