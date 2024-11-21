@@ -12,6 +12,12 @@
     }
   },
   {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-\"": "workspace::NewTerminal"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "ctrl-[": ["buffer_search::Dismiss", "project_search::ToggleFocus"],
@@ -22,7 +28,6 @@
   {
     "context": "Editor && vim_mode == normal && vim_operator == none",
     "bindings": {
-      "ctrl-\"": null,
       "ctrl-[": ["buffer_search::Dismiss", "project_search::ToggleFocus"],
       "space e": "editor::GoToDiagnostic",
       "ctrl-'": "terminal_panel::ToggleFocus",

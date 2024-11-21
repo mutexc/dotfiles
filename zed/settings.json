@@ -22,7 +22,7 @@
   "use_smartcase_search": true,
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine",
+    "light": "One Dark",
     "dark": "Rosé Pine"
   },
   "experimental.theme_overrides": {
