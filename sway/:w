@@ -1,14 +1,13 @@
 # The following is needed for screen sharing and pipewire?
 include /etc/sway/config.d/*
 
-exec gsettings set $gnome-schema gtk-theme 'adwaita-dark'
-exec gsettings set $gnome-schema icon-theme 'adwaita-dark'
-exec gsettings set $gnome-schema cursor-theme 'adwaita-dark'
-# exec_always {
-#     gsettings set $gnome-schema icon-theme 'Adwaita Dark'
-#     gsettings set $gnome-schema cursor-theme 'Adwaita Dark'
-#     # gsettings set $gnome-schema font-name 'Sans 10'
-# }
+exec_always {
+	gsettings get org.gnome.desktop.interface 'Adwaita-Dark'
+    gsettings set $gnome-schema gtk-theme 'Adwaita-Dark'
+    gsettings set $gnome-schema icon-theme 'Adwaita-Dark'
+    gsettings set $gnome-schema cursor-theme 'Adwaita-Dark'
+    # gsettings set $gnome-schema font-name 'Sans 10'
+}
 
 set $output-primary DP-1 pos 1920 0
 set $mod Mod1
