@@ -182,7 +182,7 @@ bar {
 }
 
 
-default_border pixel 0
+default_border pixel 2
 titlebar_padding 1
 titlebar_border_thickness 1
 
