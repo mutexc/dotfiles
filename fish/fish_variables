@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export ASSETS_FOLDER:/home/op/ABitSavvy/src/assets
+SETUVAR --export ASSETS_FOLDER:/home/op/abs/src/assets
 SETUVAR --export DATABASE_URL:postgresql\x3a//op\x3aaobd1202\x40localhost\x3a5432/abs_db
 SETUVAR --export DATABASE_URL_C:postgresql\x3a//op\x3aaobd1202\x40localhost\x3a5432/abs_db
 SETUVAR --export GO_DATABASE_URL:host\x3dlocalhost\x20port\x3d5999\x20user\x3dop\x20password\x3daobd1202\x20dbname\x3dabs_db\x20sslmode\x3ddisable

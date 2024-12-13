@@ -25,21 +25,21 @@ exec pactl load-module module-switch-on-connect
 output HDMI-A-1 pos 0 0 res 1920x1080@143.991Hz 
 # DON'T USE UNLESS ON A MULTI-MONITOR SETUP
 # removed second monitor
-output DP-1 pos 1920 0 res 1920x1080@180.00Hz
+# output DP-1 pos 1920 0 res 1920x1080@180.00Hz
 
 # assign workspaces 1-5 to main monitor and 6-10 to secondary monitor
 # removed second monitor for now
-workspace 1 output DP-1 
-workspace 2 output DP-1 
-workspace 3 output DP-1 
-workspace 4 output DP-1 
-workspace 5 output DP-1 
-workspace 6 output DP-1 
-workspace 7 output DP-1 
-workspace 8 output DP-1 
-workspace 9 output DP-1
-workspace 10 output HDMI-A-1
-
+# workspace 1 output DP-1 
+# workspace 2 output DP-1 
+# workspace 3 output DP-1 
+# workspace 4 output DP-1 
+# workspace 5 output DP-1 
+# workspace 6 output DP-1 
+# workspace 7 output DP-1 
+# workspace 8 output DP-1 
+# workspace 9 output DP-1
+# workspace 10 output HDMI-A-1
+#
 # Setup wallpaper
 output * bg "/home/op/wallpapers/art.png" fit
 

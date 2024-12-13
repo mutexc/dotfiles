@@ -2,7 +2,7 @@
 set -Ux DATABASE_URL_C "postgresql://op:aobd1202@localhost:5432/abs_db"
 set -Ux DATABASE_URL "postgresql://op:aobd1202@localhost:5432/abs_db"
 # set -Ux DATABASE_URL "postgresql://op:aobd1202@localhost/abs_db"
-set -Ux ASSETS_FOLDER /home/op/ABitSavvy/src/assets
+set -Ux ASSETS_FOLDER /home/op/abs/src/assets
 
 # for a bitsavvy rewrite in go
 # set -Ux GO_DATABASE_URL_C "host=localhost port=5999 user=op password=aobd1202 dbname=abs_db sslmode=disable"
