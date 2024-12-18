@@ -22,7 +22,7 @@ exec pactl load-module module-switch-on-connect
 
 
 # Setup resolution and refresh rate for connect monitor
-output HDMI-A-1 pos 0 0 res 1920x1080@143.991Hz 
+output HDMI-A-1 pos 0 0 res 1920x1080@144.00Hz 
 # DON'T USE UNLESS ON A MULTI-MONITOR SETUP
 # removed second monitor
 # output DP-1 pos 1920 0 res 1920x1080@180.00Hz
@@ -41,7 +41,7 @@ output HDMI-A-1 pos 0 0 res 1920x1080@143.991Hz
 # workspace 10 output HDMI-A-1
 #
 # Setup wallpaper
-output * bg "/home/op/wallpapers/art.png" fit
+output * bg "/home/op/Wallpapers/wallhaven.png" fit
 
 # File Manager
 bindsym $mod+e exec dolphin 
