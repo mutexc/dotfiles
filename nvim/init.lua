@@ -11,6 +11,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 vim.opt.showmode = false
+vim.opt.cc = '80'
 
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
@@ -457,7 +458,7 @@ require('lazy').setup({
           ['<C-f>'] = cmp.mapping.scroll_docs(4),
 
           -- Accept ([y]es) the completion.
-          ['<C-y>'] = cmp.mapping.confirm { select = true },
+          ['<CR>'] = cmp.mapping.confirm { select = true },
 
 
 
