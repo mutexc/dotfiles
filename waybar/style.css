@@ -1,50 +1,41 @@
 * {
-    font-family: 'Comic Code', 'Comic Code', 'Comic Code', monospace;
+    font-family: 'Fira Code';
     font-size: 14px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	margin: 0;
-	padding-left: 4px;
-	padding-right: 4px;
-	border-radius: 4px;
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-radius: 10px;
 }
 
 window#waybar {
 	padding-top: 2px; 
 	padding-bottom: 2px; 
-	background: #1c1121;
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+	background: black;
+	color: #ffffff;
+	transition-property: background-color;
+	transition-duration: .5s;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
 #workspaces button.visible {
-    background-color: #5a376b; 
-	color: #ffffff;
+    background-color: #013220; 
+    color: #ffffff;
 }
 #workspaces button {
-    padding: 0px 1px 0px 0px;
+    padding: 0px 2px 0px 2px;
     background-color: #ffffee;
     color: #000002;
-	border: none;
-	border-radius: 2px;
+    border: none;
+    border-radius: 2px;
 }
 
 #workspaces button:hover {
-	background-color: #5a376b;
+	background-color: #013220;
+	color: white;
 }
 
 #workspaces button.focused {
@@ -59,7 +50,6 @@ window#waybar.solo {
 #clock,
 #cpu,
 #memory,
-#temperature,
 #pulseaudio,
 #tray,
 #window,
@@ -78,38 +68,38 @@ window#waybar.solo {
     margin-right: 0;
 }
 
-#clock {
-	background-color: #5a376b;
-    color: #e6daca;
-}
 
 label:focus {
-	background-color: #5a376b;
+	background-color: #013220;
 }
 
 #cpu {
-	background-color: #5a376b;
+	background-color: #013220;
 	color: #e6daca;
 }
 
 #memory {
-	background-color: #5a376b;
+	background-color: #013220;
 	color: #e6daca;
 }
 
 
 #pulseaudio {
-	background-color: #5a376b;
+    background-color: #013220;
+    color: #e6daca;
+}
+#clock {
+    background-color: #013220;
     color: #e6daca;
 }
 
 #pulseaudio.muted {
-	background-color: #5a376b;
+	background-color: #013220;
     color: white;
 }
 
 #tray {
-	background-color: #5a376b;
+	background-color: #013220;
 }
 
 #tray > .passive {
@@ -118,5 +108,6 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-	background-color: #5a376b;
+	background-color: #013220;
 }
+
