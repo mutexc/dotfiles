@@ -16,6 +16,7 @@ function fish_user_key_bindings
     end
     fish_vi_key_bindings
 end
+alias hx=helix
 
 # Commented out after switching to nixos
 # fish_add_path /home/op/.cargo/bin
