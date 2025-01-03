@@ -14,9 +14,12 @@ set showmatch
 set hlsearch
 set history=1000
 set cursorline
+let &t_SI = "\e[6 q]"
+let &t_EI = "\e[2 q]"
 set mouse=a
 set relativenumber
 set clipboard="unnamedplus"
+set colorcolumn=80
 colorscheme torte
 syntax on
 
