@@ -22,7 +22,7 @@ bindings = [
 ]
 [colors]
   [colors.primary]
-  background = "#4c4e52"
+  background = "#303030"
   foreground = "#ffffff"
 
   [colors.cursor]
