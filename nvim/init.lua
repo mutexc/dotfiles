@@ -2,11 +2,12 @@
 vim.g.mapleader = ' ' 
 vim.g.maplocalleader = ' '
 vim.opt.signcolumn = 'yes'
-vim.cmd.colorscheme 'torte'
 vim.shiftwidth = 4
 vim.tabstop = 4
 vim.swapfile = false
-vim.opt.number = true vim.opt.relativenumber = true vim.opt.mouse = 'a'
+vim.opt.number = true 
+vim.opt.relativenumber = true 
+vim.opt.mouse = 'a'
 vim.opt.cc = '80'
 vim.opt.undofile = true
 vim.opt.ignorecase = true
@@ -35,18 +36,22 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
       'ibhagwan/fzf-lua',
       'VonHeikemen/lsp-zero.nvim',
-      'neovim/nvim-lspconfig'
+      'neovim/nvim-lspconfig',
+      'ellisonleao/gruvbox.nvim',
 })
 
+
+require("gruvbox").setup({
+	  terminal_colors = true,
+	  contrast = "hard",
+})
+vim.cmd.colorscheme "gruvbox"
 
 -- Fuzzy finder
 vim.api.nvim_set_keymap("n", "<leader>f", ":FzfLua files<CR>", {noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>g", ":FzfLua grep<CR>", {noremap = true })
 
-
-
 -- LSP - Setup bare rust_analyzer, only used for DOCS and DIAGNOSTICS.
-
 vim.api.nvim_create_autocmd('LspAttach', {
   desc = 'LSP actions',
   callback = function(event)

@@ -20,32 +20,30 @@ history = 2_000
 bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
-[colors]
-  [colors.primary]
-  background = "#303030"
-  foreground = "#ffffff"
 
-  [colors.cursor]
-  text = "#122637"
-  cursor = "#f0cb09"
+# This is gruvbox-material-hard-dark
+[colors.primary]
+background = '#1d2021'
+foreground = '#d4be98'
 
-  [colors.normal]
-  black = "#242424"
-  red = "#f62b5a"
-  green = "#47b413"
-  yellow = "#e3c401"
-  blue = "#24acd4"
-  magenta = "#f2affd"
-  cyan = "#13c299"
-  white = "#e6e6e6"
+# Normal colors
+[colors.normal]
+black   = '#32302f'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
 
-  [colors.bright]
-  black = "#616161"
-  red = "#ff4d51"
-  green = "#35d450" 
-  yellow = "#e9e836"
-  blue = "#5dc5f8"
-  magenta = "#feabf2"
-  cyan = "#24dfc4"
-  white = "#ffffff"
-
+# Bright colors (same as normal colors)
+[colors.bright]
+black   = '#32302f'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
