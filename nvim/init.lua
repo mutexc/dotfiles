@@ -75,3 +75,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 -- setup rust-analyzer
 require('lspconfig').rust_analyzer.setup({})
+require('lspconfig').zls.setup({})
