@@ -47,9 +47,17 @@ require("gruvbox").setup({
 })
 vim.cmd.colorscheme "gruvbox"
 
+
 -- Fuzzy finder
-vim.api.nvim_set_keymap("n", "<leader>f", ":FzfLua files<CR>", {noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>f", ":FzfLua files<CR>", {silent= true, noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>g", ":FzfLua grep<CR>", {noremap = true })
+-- This gets rid of a git_status warning displayed by FZF-LUA for some odd reason
+require('fzf-lua').setup({
+	files = {
+		git_icons = false,
+		silent = true,
+	},
+})
 
 -- LSP - Setup bare rust_analyzer, only used for DOCS and DIAGNOSTICS.
 vim.api.nvim_create_autocmd('LspAttach', {
