@@ -1,5 +1,5 @@
 [font]
-	size = 18
+	size = 19
 	[font.normal]
 	family = "terminus"
 	style = "regular"
@@ -12,6 +12,11 @@
 	family = "terminus"
 	style = "italic"
 
+# need this to handle neovim's column line without having to resize
+[window.dimensions]
+columns = 90
+lines   = 25
+
 [scrolling]
 history = 2_000
 
@@ -21,30 +26,27 @@ bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
 
-# This is gruvbox-material-hard-dark
 [colors.primary]
-#background = '#1d2021'
-background = '#000000'
-foreground = '#d4be98'
+background = "0x1d2021"
+foreground = "0xd4be98"
 
-# Normal colors
 [colors.normal]
-black   = '#32302f'
-red     = '#ea6962'
-green   = '#a9b665'
-yellow  = '#d8a657'
-blue    = '#7daea3'
-magenta = '#d3869b'
-cyan    = '#89b482'
-white   = '#d4be98'
+black = "0x32302f"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
 
-# Bright colors (same as normal colors)
 [colors.bright]
-black   = '#32302f'
-red     = '#ea6962'
-green   = '#a9b665'
-yellow  = '#d8a657'
-blue    = '#7daea3'
-magenta = '#d3869b'
-cyan    = '#89b482'
-white   = '#d4be98'
+black = "0x32302f"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
+
