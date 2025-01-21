@@ -19,7 +19,7 @@ end
 alias hx=helix
 
 # Commented out after switching to nixos
-# fish_add_path /home/op/.cargo/bin
+ fish_add_path /home/op/.cargo/bin
 fish_add_path /usr/bin/
 fish_add_path /home/op/.local/share/bin
 fish_add_path /home/op/.local/share/icons

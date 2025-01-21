@@ -37,7 +37,9 @@ require('lazy').setup({
       'ibhagwan/fzf-lua',
       'VonHeikemen/lsp-zero.nvim',
       'neovim/nvim-lspconfig',
-      'ellisonleao/gruvbox.nvim',
+      'EdenEast/nightfox.nvim',
+      "rebelot/kanagawa.nvim",
+      'nvim-lualine/lualine.nvim',
        { -- Autocompletion
     'hrsh7th/nvim-cmp',
 	event = 'InsertEnter',
@@ -154,11 +156,19 @@ require('lazy').setup({
     end,
   },
 })
-require("gruvbox").setup({
-	  terminal_colors = true,
-	  contrast = "hard",
+
+-- status bar stuff
+require('lualine').setup({
+	options = {
+		theme = "kanagawa",
+		icons_enabled = false,
+	}
 })
-vim.cmd.colorscheme "gruvbox"
+
+require('kanagawa').setup({
+	theme = "wave",
+})
+vim.cmd.colorscheme "kanagawa"
 
 
 -- Fuzzy finder
