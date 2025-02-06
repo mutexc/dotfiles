@@ -48,9 +48,9 @@ workspace 18 output HDMI-A-1
 workspace 19 output HDMI-A-1
 workspace 20 output HDMI-A-1
 #
-# Setup wallpaper
-output DP-1 bg "/home/op/Wallpapers/wallhaven.png" fill
-output HDMI-A-1 bg "/home/op/Wallpapers/second-monitor.png" fill
+# Fuck wallpapers
+# output DP-1 bg "/home/op/Wallpapers/wallhaven.png" fill
+# output HDMI-A-1 bg "/home/op/Wallpapers/second-monitor.png" fill
 
 # File Manager
 bindsym $mod+e exec thunar 
