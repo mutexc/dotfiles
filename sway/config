@@ -22,7 +22,7 @@ exec pactl load-module module-switch-on-connect
 
 
 # Setup resolution and refresh rate for connect monitor
-output HDMI-A-1 pos 1920 0 res 1920x1080@144.00Hz transform 90  
+output HDMI-A-1 pos 1920 0 res 1920x1080@144.00Hz 
 # DON'T USE UNLESS ON A MULTI-MONITOR SETUP
 output DP-1 pos 0 0 res 1920x1080@180.00Hz
 
@@ -56,7 +56,13 @@ workspace 20 output HDMI-A-1
 bindsym $mod+e exec thunar 
 
 # screenshot support with alt+n 
-bindsym $mod+n exec grim -g "$(slurp -d)" - | wl-copy -t image/png
+
+
+
+bindsym $mod+n exec grim -t jpeg -g "$(slurp -d)" | wl-copy -t ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+
+
+# bindsym $mod+n exec grim -g "$(slurp -d)" - | wl-copy -t image/png
 # screenshot support with alt+Shift+n, send them directly to home
 bindsym $mod+Shift+n exec grim | wl-copy -t image/png
 ## audio controls 

@@ -1,5 +1,5 @@
 [font]
-	size = 19
+	size = 23
 	[font.normal]
 	family = "terminus"
 	style = "regular"
@@ -28,7 +28,7 @@ bindings = [
 #
 [colors.primary]
 # background = "0x1d2021"
-foreground = "0xfeeea0"
+foreground = "0xfeeecf"
 #
 # [colors.normal]
 # black = "0x32302f"
