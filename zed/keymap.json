@@ -8,7 +8,8 @@
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-n": "workspace::NewTerminal"
+      "ctrl-n": "workspace::NewTerminal",
+      "ctrl-9": "pane::CloseActiveItem"
     }
   },
 
@@ -17,8 +18,7 @@
       "ctrl-[": ["workspace::SendKeystrokes", "escape"],
       "ctrl-'": "workspace::ToggleBottomDock",
       "ctrl-g": "editor::GoToDiagnostic",
-      "shift-g": "editor::GoToPreviousDiagnostic",
-      "ctrl-w": "pane::CloseActiveItem"
+      "shift-g": "editor::GoToPreviousDiagnostic"
     }
   }
 ]

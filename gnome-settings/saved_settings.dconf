@@ -216,8 +216,8 @@ name='Files'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Shift><Alt>Return'
-command='wezterm'
-name='wezterm'
+command='alacritty'
+name='alacritty'
 
 [org/gnome/shell]
 disabled-extensions=@as []
