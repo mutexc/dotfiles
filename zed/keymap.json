@@ -1,42 +1,24 @@
 [
   {
-    "context": "Editor",
+    "context": "Editor && showing_completions",
     "bindings": {
-      "ctrl-9": "editor::ToggleHunkDiff",
-      "ctrl-'": "terminal_panel::ToggleFocus",
-      "ctrl-\"": "workspace::NewTerminal",
-      "ctrl-g": "editor::GoToDiagnostic"
+      "ctrl-y": "editor::ConfirmCompletion"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
+      "ctrl-n": "workspace::NewTerminal"
+    }
+  },
+
+  {
+    "bindings": {
+      "ctrl-[": ["workspace::SendKeystrokes", "escape"],
       "ctrl-'": "workspace::ToggleBottomDock",
-      "ctrl-\"": "workspace::NewTerminal"
-    }
-  },
-  {
-    "context": "ProjectSearchView",
-    "bindings": {
-      "ctrl-[": ["vim::SwitchMode", "Normal"]
-    }
-  },
-  {
-    "context": "OutlinePanel && not_editing",
-    "bindings": {
-      "ctrl-[": ["vim::SwitchMode", "Normal"]
-    }
-  },
-  {
-    "context": "BufferSearchBar",
-    "bindings": {
-      "ctrl-[": ["vim::SwitchMode", "Normal"]
-    }
-  },
-  {
-    "context": "Picker > Editor",
-    "bindings": {
-      "ctrl-[": ["vim::SwitchMode", "Normal"]
+      "ctrl-g": "editor::GoToDiagnostic",
+      "shift-g": "editor::GoToPreviousDiagnostic",
+      "ctrl-w": "pane::CloseActiveItem"
     }
   }
 ]
