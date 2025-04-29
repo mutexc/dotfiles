@@ -12,6 +12,8 @@
       "format_on_save": "on"
     }
   },
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
   "diagnostics": {
     "include_warnings": true,
     "inline": {
@@ -21,6 +23,15 @@
       "min_column": 0,
       "max_severity": null
     }
+  },
+  "assistant": {
+    "dock": null
+  },
+  "chat_panel": {
+    "dock": null
+  },
+  "terminal": {
+    "dock": "right"
   },
   "relative_line_numbers": true,
   "vim_mode": true,
@@ -43,6 +54,6 @@
   "theme": {
     "mode": "dark",
     "light": "Ayu Dark",
-    "dark": "One Dark"
+    "dark": "Tokyo Night Storm"
   }
 }

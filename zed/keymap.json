@@ -16,9 +16,9 @@
   {
     "bindings": {
       "ctrl-[": ["workspace::SendKeystrokes", "escape"],
-      "ctrl-'": "workspace::ToggleBottomDock",
-      "ctrl-g": "editor::GoToDiagnostic",
-      "shift-g": "editor::GoToPreviousDiagnostic"
+      "ctrl-'": "workspace::ToggleRightDock",
+      "ctrl-e": "editor::GoToDiagnostic",
+      "ctrl-g": "editor::GoToPreviousDiagnostic"
     }
   }
 ]

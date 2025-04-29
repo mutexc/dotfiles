@@ -4,6 +4,11 @@ set -x DATABASE_URL "postgresql://op:aobd1202@localhost:5432/trafriqa?sslmode=di
 # set -Ux DATABASE_URL "postgresql://op:aobd1202@localhost/abs_db"
 set -Ux ASSETS_FOLDER /home/op/abs/src/assets
 set LANG C.UTF-8
+# Authentik stuff
+set -x CLIENT_ID "TOGPfDsOs12RtMlYQx6j6QwUByTnm6PS1zZsXa5u"
+set -x CLIENT_SECRET "swsv69Hw5uchbwZBzrJoXb6lr00zNpn8aFREAg6MNHVkHv1ZhYrByvReiwB8eD3UDTjQa5DtJVQmip3dwf0AXnOioa09kMoMaGel6vplOl30Serrs5NOJUz7nHupzt5M"
+set -x AUTH_URI "http://localhost/application/o/authorize/"
+set -x TOKEN_URI "http://localhost/application/o/token/"
 
 # for a bitsavvy rewrite in go
 # set -Ux GO_DATABASE_URL_C "host=localhost port=5999 user=op password=aobd1202 dbname=abs_db sslmode=disable"
