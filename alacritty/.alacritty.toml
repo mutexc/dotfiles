@@ -1,15 +1,15 @@
 [font]
-	size = 19
+	size = 16
 	[font.normal]
-	family = "terminus"
+	family = "jetbrains mono"
 	style = "regular"
 
 	[font.bold]
-	family = "terminus"
+	family = "jetbrains mono"
 	style = "regular"
 
 	[font.italic]
-	family = "terminus"
+	family = "jetbrains mono"
 	style = "italic"
 
 # need this to handle neovim's column line without having to resize
@@ -26,6 +26,43 @@ bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
 #
+
 [colors.primary]
-background = "0x1d4444"
-foreground = "0xfeeecf"
+background = "#000000"    # black
+foreground = "#ffffff"    # white 
+
+[colors.normal]
+black   = "#1a1625"        # deep purple-black
+red     = "#ff5c8f"        # muted magenta
+green   = "#4fd6be"        # teal-green
+yellow  = "#f1fa8c"        # pastel yellow
+blue    = "#6272a4"        # dusty blue
+magenta = "#bd93f9"        # soft purple
+cyan    = "#8be9fd"        # light cyan
+white   = "#f8f8f2"        # very light gray
+
+[colors.bright]
+black   = "#44475a"        # dark gray-blue
+red     = "#ff79c6"
+green   = "#50fa7b"
+yellow  = "#f1fa8c"
+blue    = "#8be9fd"
+magenta = "#bd93f9"
+cyan    = "#ffb86c"
+white   = "#ffffff"
+
+[colors.cursor]
+text = "#0d0b1a"
+cursor = "#d0cde1"
+
+[colors.selection]
+text = "#0d0b1a"
+background = "#bd93f9"
+
+[colors.search.matches]
+foreground = "#0d0b1a"
+background = "#ffb86c"
+
+[colors.search.focused_match]
+foreground = "#ffffff"
+background = "#8be9fd"

@@ -22,16 +22,16 @@ function fish_user_key_bindings
     end
     fish_vi_key_bindings
 end
-alias hx=helix
+#alias hx=helix
 
 # Commented out after switching to nixos
  fish_add_path /home/op/.cargo/bin
 fish_add_path /usr/bin/
-fish_add_path /home/op/.local/share/bin
 fish_add_path /home/op/.local/share/icons
 fish_add_path /home/op/.local/bin/
 fish_add_path /home/op/.local/share
 fish_add_path /home/op/go/bin/
+fish_add_path /home/op/.bin
 #
 set fish_greeting ""
 set -Ux _JAVA_AWT_WM_NONREPARENTING 1
