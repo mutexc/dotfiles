@@ -11,7 +11,7 @@ exec gsettings set $gnome-schema cursor-theme 'adwaita-dark'
 # }
 
 set $output-primary DP-1 pos 1920 0
-set $mod Mod1
+set $mod Super
 set $left h
 set $down j
 set $up k
