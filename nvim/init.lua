@@ -31,6 +31,10 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 5
 
+--
+--
+
+--
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
 vim.opt.confirm = true
@@ -42,10 +46,10 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'toggle diagnostics float window' })
 
 vim.keymap.set('n', '[d', function()
-  vim.diagnostic.jump({ count = -1, float = false })
+  vim.diagnostic.jump { count = -1, float = false }
 end)
 vim.keymap.set('n', ']d', function()
-  vim.diagnostic.jump({ count = 1, float = false })
+  vim.diagnostic.jump { count = 1, float = false }
 end)
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
@@ -118,7 +122,7 @@ require('lazy').setup {
       { 'nvim-telescope/telescope-ui-select.nvim' },
 
       -- Useful for getting pretty icons, but requires a Nerd Font.
-      { 'nvim-tree/nvim-web-devicons',            enabled = vim.g.have_nerd_font },
+      { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
@@ -226,7 +230,7 @@ require('lazy').setup {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- Useful status updates for LSP.
-      { 'j-hui/fidget.nvim',       opts = {} },
+      { 'j-hui/fidget.nvim', opts = {} },
 
       -- Allows extra capabilities provided by blink.cmp
       'saghen/blink.cmp',
@@ -615,6 +619,7 @@ require('lazy').setup {
       signature = { enabled = true },
     },
   },
+  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
 
   {
     'rebelot/kanagawa.nvim',
@@ -623,13 +628,13 @@ require('lazy').setup {
       ---@diagnostic disable-next-line: missing-fields
       require('kanagawa').setup {
         colors = {
-          theme = { wave = { ui = { bg = '#111111' } } },
+          theme = { lotus = { ui = { bg = '#111111' } } },
         },
         styles = {
           comments = { italic = false },
         },
+        transparent = false,
       }
-      vim.cmd.colorscheme 'kanagawa'
     end,
   },
 
@@ -676,5 +681,11 @@ require('lazy').setup {
   },
 }
 
+require('catppuccin').setup {
+  flavour = 'auto', -- latte, frappe, macchiato, mocha
+  transparent_background = true,
+}
+
+vim.cmd.colorscheme 'catppuccin'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

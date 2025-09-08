@@ -1,15 +1,15 @@
 [font]
 	size = 19
 	[font.normal]
-	family = "terminus"
+	family = "Terminus"
 	style = "regular"
 
 	[font.bold]
-	family = "terminus"
+	family = "Terminus"
 	style = "regular"
 
 	[font.italic]
-	family = "terminus"
+	family = "Terminus"
 	style = "italic"
 
 # need this to handle neovim's column line without having to resize
@@ -27,10 +27,12 @@ bindings = [
 ]
 #
 
+
 [colors.primary]
 background = "#000000"    # black
 foreground = "#ffffff"    # white 
-
+[window]
+opacity = 0.91
 [colors.normal]
 black   = "#1a1625"        # deep purple-black
 red     = "#ff5c8f"        # muted magenta
