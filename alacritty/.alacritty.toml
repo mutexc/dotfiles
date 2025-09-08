@@ -1,15 +1,15 @@
 [font]
-	size = 14
+	size = 19
 	[font.normal]
-	family = "jetbrains mono"
+	family = "terminus"
 	style = "regular"
 
 	[font.bold]
-	family = "jetbrains mono"
+	family = "terminus"
 	style = "regular"
 
 	[font.italic]
-	family = "jetbrains mono"
+	family = "terminus"
 	style = "italic"
 
 # need this to handle neovim's column line without having to resize

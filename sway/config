@@ -190,6 +190,7 @@ bar {
     position bottom 
 
     status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+    status_command i3blocks
 
     colors {
         statusline #ffffff
