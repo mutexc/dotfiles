@@ -4,6 +4,7 @@ include /etc/sway/config.d/*
 exec gsettings set $gnome-schema gtk-theme 'adwaita-dark'
 exec gsettings set $gnome-schema icon-theme 'adwaita-dark'
 exec gsettings set $gnome-schema cursor-theme 'adwaita-dark'
+exec swaybg --image /home/$USER/.config/dotfiles/Wallpapers/golden-sunset-glow-over-the-lake-with-birds-fq-1920x1080.jpg  --mode fill
 # exec_always {
 #     gsettings set $gnome-schema icon-theme 'Adwaita Dark'
 #     gsettings set $gnome-schema cursor-theme 'Adwaita Dark'
@@ -194,10 +195,10 @@ bar {
 
     colors {
         statusline #ffffff
-        background #1c1c1c
+        background #000000
         inactive_workspace #32323200 #323232ff #5c5c5c
     }
-    font terminus 10
+    font terminus 11
 }
 
 
