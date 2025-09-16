@@ -25,46 +25,27 @@ history = 2_000
 bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
-#
-
 
 [colors.primary]
-background = "#000000"    # black
-foreground = "#ffffff"    # white 
-[window]
-opacity = 0.91
+background = "0x1d2021"
+foreground = "0xd4be98"
+
 [colors.normal]
-black   = "#1a1625"        # deep purple-black
-red     = "#ff5c8f"        # muted magenta
-green   = "#4fd6be"        # teal-green
-yellow  = "#f1fa8c"        # pastel yellow
-blue    = "#6272a4"        # dusty blue
-magenta = "#bd93f9"        # soft purple
-cyan    = "#8be9fd"        # light cyan
-white   = "#f8f8f2"        # very light gray
+black = "0x32302f"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
 
 [colors.bright]
-black   = "#44475a"        # dark gray-blue
-red     = "#ff79c6"
-green   = "#50fa7b"
-yellow  = "#f1fa8c"
-blue    = "#8be9fd"
-magenta = "#bd93f9"
-cyan    = "#ffb86c"
-white   = "#ffffff"
-
-[colors.cursor]
-text = "#0d0b1a"
-cursor = "#d0cde1"
-
-[colors.selection]
-text = "#0d0b1a"
-background = "#bd93f9"
-
-[colors.search.matches]
-foreground = "#0d0b1a"
-background = "#ffb86c"
-
-[colors.search.focused_match]
-foreground = "#ffffff"
-background = "#8be9fd"
+black = "0x32302f"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
