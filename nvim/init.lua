@@ -619,23 +619,9 @@ require('lazy').setup {
       signature = { enabled = true },
     },
   },
-  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
-
   {
-    'rebelot/kanagawa.nvim',
+    'ellisonleao/gruvbox.nvim',
     priority = 1000,
-    config = function()
-      ---@diagnostic disable-next-line: missing-fields
-      require('kanagawa').setup {
-        colors = {
-          theme = { lotus = { ui = { bg = '#111111' } } },
-        },
-        styles = {
-          comments = { italic = false },
-        },
-        transparent = false,
-      }
-    end,
   },
 
   -- Highlight todo, notes, etc in comments
@@ -681,11 +667,6 @@ require('lazy').setup {
   },
 }
 
-require('catppuccin').setup {
-  flavour = 'auto', -- latte, frappe, macchiato, mocha
-  transparent_background = false,
-}
-
-vim.cmd.colorscheme 'catppuccin'
+vim.cmd.colorscheme 'gruvbox'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

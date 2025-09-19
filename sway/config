@@ -22,10 +22,8 @@ set $term alacritty
 exec pactl load-module module-switch-on-connect
 
 
-# Setup resolution and refresh rate for connect monitor
-output HDMI-A-1 pos 1920 0 res 1920x1080@144.00Hz 
 # DON'T USE UNLESS ON A MULTI-MONITOR SETUP
-output DP-1 pos 0 0 res 1920x1080@180.00Hz
+output DP-1 pos 0 0 res 3840x2160@59.997Hz 
 
 # assign workspaces 1-5 to main monitor and 6-10 to secondary monitor
 workspace 1 output DP-1 
