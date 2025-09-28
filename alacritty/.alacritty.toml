@@ -1,16 +1,16 @@
 [font]
-	size = 13
-# 	[font.normal]
-# 	family = "Terminus"
-# 	style = "regular"
-#
-# 	[font.bold]
-# 	family = "Terminus"
-# 	style = "regular"
-#
-# 	[font.italic]
-# 	family = "Terminus"
-# 	style = "italic"
+	size = 17
+	[font.normal]
+	family = "jetbrains mono"
+	style = "regular"
+
+	[font.bold]
+	family = "jetbrains mono"
+	style = "regular"
+
+	[font.italic]
+	family = "jetbrains mono"
+	style = "italic"
 
 # need this to handle neovim's column line without having to resize
 [window.dimensions]
@@ -27,8 +27,8 @@ bindings = [
 ]
 
 [colors.primary]
-#background = "0x1d2021"
-background = "0x000000"
+background = "0x1d2021"
+#background = "0x000000"
 foreground = "0xd4be98"
 
 [colors.normal]

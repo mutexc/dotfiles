@@ -28,6 +28,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.list = true
 vim.opt.inccommand = 'split'
+vim.opt.cc = '80'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 5
 
@@ -300,7 +301,7 @@ require('lazy').setup {
 
           -- WARN: This is not Goto Definition, this is Goto Declaration.
           --  For example, in C this would take you to the header.
-          map('grD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
+          map('gl', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
           map('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
 
           -- Fuzzy find all the symbols in your current document.
@@ -419,6 +420,8 @@ require('lazy').setup {
         -- gopls = {},
         -- pyright = {},
         rust_analyzer = {},
+        pylsp = {},
+        zls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:

@@ -36,3 +36,4 @@ fish_add_path /home/op/.bin
 set fish_greeting ""
 set -Ux _JAVA_AWT_WM_NONREPARENTING 1
 set -g fish_color_autosuggestion '555555'
+

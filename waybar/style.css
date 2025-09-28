@@ -1,12 +1,14 @@
 * {
   font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   color: #dcdfe1;
+  margin-bottom: 0.1px;
 }
 
 #waybar {
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: #1d2021;
   border: none;
   box-shadow: none;
 }
@@ -15,21 +17,23 @@
 #window,
 #tray{
   /*background-color: rgba(29,31,46, 0.95);*/
-  background-color: rgba(15,27,53,0.9);
-  padding: 4px 6px; 
-  margin-top: 6px; 
-  margin-left: 6px; 
-  margin-right: 6px;
+  background-color: rgba(1,2,5,0);
+  padding: 2px 3px; 
+  margin-top: 2px; 
+  margin-left: 3px; 
+  margin-right: 3px;
   border-radius: 10px;
   border-width: 0px;
 }
 
 #clock,
 #custom-power{
-  background-color: rgba(15,27,53,0.9);
-  margin-top: 6px;
+
+  background-color: rgba(1,2,5,0);
+  /* background-color: rgba(15,27,53,0.9); */
+  margin-top: 2px;
   margin-right: 6px;
-  padding: 4px 2px;
+  padding: 2px 3px;
   border-radius: 0 10px 10px 0;
   border-width: 0px;
 }
@@ -40,9 +44,10 @@
 #custom-temperature,
 #memory,
 #cpu{
-  background-color: rgba(15,27,53,0.9);
-  margin-top: 6px;
-  padding: 4px 2px;
+  /* background-color: rgba(15,27,53,0.9); */
+  background-color: rgba(1,2,5,0);
+  margin-top: 2px;
+  padding: 2px 3px;
   border-width: 0px;
 }
 
@@ -67,9 +72,9 @@
 
 #workspaces button:hover{
   background-color: rgba(97, 175, 239, 0.2);
-  padding: 2px 8px;
-  margin: 0 2px;
-  border-radius: 10px;
+  /* padding: 2px 3px; */
+  /* margin: 0 2px; */
+  /* border-radius: 10px; */
 }
 
 #workspaces button.active {
