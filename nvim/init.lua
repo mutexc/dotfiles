@@ -303,6 +303,7 @@ require('lazy').setup {
           --  For example, in C this would take you to the header.
           map('gl', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
           map('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
+          map('gi', vim.lsp.buf.implementation, '[G]oto [D]efinition')
 
           -- Fuzzy find all the symbols in your current document.
           --  Symbols are things like variables, functions, types, etc.

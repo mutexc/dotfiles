@@ -1,7 +1,7 @@
 * {
   font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   color: #dcdfe1;
   margin-bottom: 0.1px;
 }
@@ -95,6 +95,6 @@
 }
 
 #window {
-  font-weight: 500;
-  font-style: italic;
+  font-weight: bold;
+  /* font-style: italic; */
 }
