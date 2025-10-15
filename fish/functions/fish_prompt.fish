@@ -1,1 +1,1 @@
-/home/mutexc/.local/share/omf/themes/boxfish/fish_prompt.fish
+/home/op/.local/share/omf/themes/boxfish/fish_prompt.fish

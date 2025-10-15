@@ -10,7 +10,8 @@
 
 	[font.italic]
 	family = "jetbrains mono"
-	style = "italic"
+        # fuck italic fonts
+	style = "regular"
 
 # need this to handle neovim's column line without having to resize
 [window.dimensions]
