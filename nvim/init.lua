@@ -23,6 +23,9 @@ vim.opt.smartcase = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = 'yes'
 vim.opt.updatetime = 250
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.textwidth = 80
 vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -30,7 +33,7 @@ vim.opt.list = true
 vim.opt.inccommand = 'split'
 vim.opt.cc = '80'
 vim.opt.cursorline = true
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 0
 
 --
 --
@@ -423,6 +426,8 @@ require('lazy').setup {
         rust_analyzer = {},
         pylsp = {},
         zls = {},
+        html = {},
+        tailwindcss = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -659,7 +664,22 @@ require('lazy').setup {
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+      ensure_installed = {
+        'html',
+        'javascript',
+        'css',
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
+      },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {

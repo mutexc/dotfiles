@@ -6,17 +6,15 @@ exec rm -rf /home/op/.config/nvim &
 exec rm -rf /home/op/.config/zed &
 exec rm -rf /home/op/.config/tmux &
 # exec rm -rf /home/op/.config/ghostty &
-# exec rm -rf /home/op/.config/hypr &
-# exec rm -rf /home/op/.config/sway &
-# exec rm -rf /home/op/.config/waybar &
-# exec rm -rf /home/op/.config/fuzzel &
-# exec ln -s /home/op/.config/dotfiles/sway/ /home/op/.config &
+exec rm -rf /home/op/.config/hypr &
+exec rm -rf /home/op/.config/waybar &
+exec rm -rf /home/op/.config/fuzzel &
 exec ln -s /home/op/.config/dotfiles/zed/ /home/op/.config &
 exec ln -s /home/op/.config/dotfiles/alacritty/.alacritty.toml /home/op &
 exec ln -s /home/op/.config/dotfiles/fish /home/op/.config &
 exec ln -s /home/op/.config/dotfiles/nvim /home/op/.config &
 exec ln -s /home/op/.config/dotfiles/tmux /home/op/.config  &
-# exec ln -s /home/op/.config/dotfiles/hypr /home/op/.config &
-# exec ln -s /home/op/.config/dotfiles/waybar /home/op/.config &
-# exec ln -s /home/op/.config/dotfiles/fuzzel /home/op/.config &
+exec ln -s /home/op/.config/dotfiles/hypr /home/op/.config &
+exec ln -s /home/op/.config/dotfiles/waybar /home/op/.config &
+exec ln -s /home/op/.config/dotfiles/fuzzel /home/op/.config &
 # exec ln -s /home/op/.config/dotfiles/ghostty /home/op/.config 

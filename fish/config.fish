@@ -1,7 +1,8 @@
-# for a bitsavvy in rust
-set -x DATABASE_URL "postgresql://op:aobd1202@localhost:5432/trafriqa?sslmode=disable"
-# set -Ux DATABASE_URL_C "postgresql://op:aobd1202@localhost:5432/abs_db"
-# set -Ux DATABASE_URL "postgresql://op:aobd1202@localhost/abs_db"
+# Db url for fleetar, need to add sslmode capability later
+set -x DATABASE_URL "postgresql://fleetar_app:aobd1202@localhost:5432/fleetar_prod?sslmode=disable"
+set -x DATABASE_URL_PROD "postgresql://fleetar_app:aobd1202@localhost:5432/fleetar_prod?sslmode=disable"
+set -x DATABASE_URL_DEV "postgresql://fleetar_app:aobd1202@localhost:5432/fleetar_dev?sslmode=disable"
+set -x DATABASE_URL_TEST "postgresql://fleetar_app:aobd1202@localhost:5432/fleetar_test?sslmode=disable"
 set -Ux ASSETS_FOLDER /home/op/abs/src/assets
 set LANG C.UTF-8
 # Authentik stuff
