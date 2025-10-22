@@ -101,6 +101,10 @@ require('lazy').setup {
                         mode = mode or 'n'
                         vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
                     end
+                    local client = vim.lsp.get_client_by_id(event.data.client_id)
+                    if client and client.server_capabilities.semanticTokensProvider then
+                        client.server_capabilities.semanticTokensProvider = nil
+                    end
                     -- Lsp keymappings
                     map('grn', vim.lsp.buf.rename, '[R]e[n]ame')
                     map('gra', vim.lsp.buf.code_action, '[G]oto Code [A]ction', { 'n', 'x' })
@@ -149,6 +153,7 @@ require('lazy').setup {
                     end,
                 },
             }
+
             local capabilities = require('blink.cmp').get_lsp_capabilities()
             local servers = {
                 rust_analyzer = {},
@@ -184,10 +189,6 @@ require('lazy').setup {
         end,
     },
 
-    {
-        'nvim-lualine/lualine.nvim',
-        opts = {},
-    },
     {
         -- Autocompletion
         'saghen/blink.cmp',
@@ -240,6 +241,9 @@ require('lazy').setup {
         'shaunsingh/nord.nvim',
         priority = 1000,
     },
+	{
+		"catppuccin/nvim", name = "catppuccin", priority = 1000 
+	},
     {
         'saghen/blink.cmp',
     },
@@ -249,12 +253,12 @@ require('lazy').setup {
     { -- Highlight, edit, and navigate code
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
-        main = 'nvim-treesitter.configs', -- Sets main module to use for opts
-        -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
+        main = 'nvim-treesitter.configs', 
         opts = {
             ensure_installed = {
                 'html',
                 'javascript',
+                rust,
                 'css',
                 'bash',
                 'c',
@@ -271,11 +275,13 @@ require('lazy').setup {
             auto_install = true,
             highlight = {
                 enable = true,
-                additional_vim_regex_highlighting = { 'ruby' },
+                additional_vim_regex_highlighting = false,
             },
-            indent = { enable = true, disable = { 'ruby' } },
+            indent = { enable = true },
         },
     },
 }
 
-vim.cmd.colorscheme 'nord'
+vim.cmd.colorscheme 'torte'
+vim.o.background="dark"
+

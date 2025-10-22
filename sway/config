@@ -58,7 +58,7 @@ bindsym $mod+e exec thunar
 
 
 
-bindsym $mod+n exec grim -t jpeg -g "$(slurp -d)" | wl-copy -t ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+bindsym $mod+n exec grim -t jpeg -g "$(slurp -d)" | wl-cop -t ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
 
 
 # bindsym $mod+n exec grim -g "$(slurp -d)" - | wl-copy -t image/png

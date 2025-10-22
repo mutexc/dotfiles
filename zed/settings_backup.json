@@ -7,7 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "disable_ai": true,
   "languages": {
     "Markdown": {
       "format_on_save": "on"
@@ -25,7 +24,7 @@
       "max_severity": null
     }
   },
-  "agent": {
+  "assistant": {
     "dock": null
   },
   "chat_panel": {

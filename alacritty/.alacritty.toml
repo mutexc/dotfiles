@@ -1,17 +1,16 @@
 [font]
-	size = 17
-	[font.normal]
-	family = "jetbrains mono"
-	style = "regular"
+    size = 18
+    [font.normal]
+	family = "Jetbrains Mono NL"
+	style = "Thin"
 
 	[font.bold]
-	family = "jetbrains mono"
-	style = "regular"
+	family = "Jetbrains Mono NL"
+	style = "Thin"
 
 	[font.italic]
-	family = "jetbrains mono"
-        # fuck italic fonts
-	style = "regular"
+	family = "Jetbrains Mono NL"
+	style = "Thin"
 
 # need this to handle neovim's column line without having to resize
 [window.dimensions]
@@ -27,27 +26,30 @@ bindings = [
    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
 ]
 
-[colors.primary]
-background = "0x1d2021"
-#background = "0x000000"
-foreground = "0xd4be98"
+# BEGINING OF GRUVBOX
+# [colors.primary]
+# background = "0x1d2021"
+# foreground = "0xd4be98"
+#
+# [colors.normal]
+# black = "0x32302f"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+#
+# [colors.bright]
+# black = "0x32302f"
+# red = "0xea6962"
+# green = "0xa9b665"
+# yellow = "0xd8a657"
+# blue = "0x7daea3"
+# magenta = "0xd3869b"
+# cyan = "0x89b482"
+# white = "0xd4be98"
+# END OF GRUVBOX
 
-[colors.normal]
-black = "0x32302f"
-red = "0xea6962"
-green = "0xa9b665"
-yellow = "0xd8a657"
-blue = "0x7daea3"
-magenta = "0xd3869b"
-cyan = "0x89b482"
-white = "0xd4be98"
 
-[colors.bright]
-black = "0x32302f"
-red = "0xea6962"
-green = "0xa9b665"
-yellow = "0xd8a657"
-blue = "0x7daea3"
-magenta = "0xd3869b"
-cyan = "0x89b482"
-white = "0xd4be98"
